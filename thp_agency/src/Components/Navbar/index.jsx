@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button/index';
+import style from './style.css'
 
 const Navbar = () => {
   return (
     <nav >
     <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/about">About</Link></li>
-      <li><Link to="/works">Works</Link></li>
+      <Link to="/" style={{color: "white"}}>_Home___</Link>  
+      <Link to="/about" style={{color: "white"}}>About___</Link>  
+      <Link to="/works" style={{color: "white"}}>Works_</Link>
       <Button />
     </ul>
     </nav>

@@ -1,6 +1,5 @@
-import React, { createContext, useContext } from 'react';
-import ThemeContext from '../../ThemeContext';
-import Theme from '../../Theme'
+import React from 'react';
+
 
 const Button = () => {
 
