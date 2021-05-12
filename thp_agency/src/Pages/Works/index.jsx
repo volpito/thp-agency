@@ -10,7 +10,7 @@ const Works = () => {
       {clients.map((a, i) => {
         localStorage.setItem(i, a.name)
     return (
-      < ><Link to={"/works/" + a.name + "-study-case"} style={{color: "white"}}>{a.name} </Link></>
+      < ><Link to={"/works/" + a.name + "-study-case"} id={i} style={{color: "white"}}>{a.name} </Link></>
     )
   })}
     </>
