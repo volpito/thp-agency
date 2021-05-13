@@ -3,15 +3,16 @@ const Theme = {
     body: '#FFF',
     color: '#ffffff',
     toggleBorder: '#FFF',
-    backgroundColor: '#363537',
+    backgroundColor: '#0d0d0d',
     height: "100vh",
     padding: "10px"
   },
+
   light: {
     body: '#363537',
-    color: '#0000cc',
+    color: '#000000',
     toggleBorder: '#6B8096',
-    backgroundColor: '#ffffff',
+    backgroundColor: '#cce5ff',
     height: "100vh",
     padding: "10px"
 }}

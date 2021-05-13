@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {useParams} from "react-router-dom";
 import clients from '../../../Components/Data/clients';
+import ReactMarkdown from 'react-markdown'
 
 const WorkSlug = () => {
   const {clientName} = useParams();
@@ -18,13 +19,12 @@ const WorkSlug = () => {
       {clients.reduce((client, i) => {
         if (currentClient !== undefined ) {
         return (
-          <div key={i} className="client">
-            <p>
-              Client : <em>{currentClient.name}</em>
-            </p>
-            <p>
-              Le projet : <strong>{currentClient.description}</strong>
-            </p>
+          <div key={i} style={{textAlign: 'center'}}className="client">
+            <>
+              <ReactMarkdown>{currentClient.title}</ReactMarkdown>
+
+              En détails : <br /> {currentClient.description}
+            </>
           </div>
         )};
       })}

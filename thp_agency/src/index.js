@@ -7,7 +7,7 @@ import Works from './Pages/Works';
 import Navbar from './Components/Navbar';
 import Theme from './Theme';
 import WorkSlug from './Pages/Works/StudyCase/index';
-
+import './App.css'
 
 const App = () => {
 
@@ -24,11 +24,13 @@ const App = () => {
   localStorage.setItem('theme', theme);
 
 //FIN DE : a transférer sur le bouton
-
+//CSS for borders :
+document.body.style = 'background: rgb(216, 130, 2);';
   return (
+    <div className="background" >
     
     <Router>
-    <button style={{float: 'right'}} className="theme" onClick={ToggleTheme} type="button">{button}</button>
+    <button className="btn" onClick={ToggleTheme} type="button">{button}</button>
       <Navbar />
       <main style={currentTheme}>
         <Switch>
@@ -49,6 +51,7 @@ const App = () => {
         </Switch>
       </main>
     </Router>
+    </div>
   );
 }
 
