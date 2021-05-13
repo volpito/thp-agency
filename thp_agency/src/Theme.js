@@ -3,9 +3,11 @@ const Theme = {
     body: '#FFF',
     color: '#ffffff',
     toggleBorder: '#FFF',
-    backgroundColor: '#0d0d0d',
+    backgroundColor: '#262626',
     height: "100vh",
-    padding: "10px"
+    padding: "30px",
+    borderRadius: "50px",
+    borderTop: "1px solid white"
   },
 
   light: {
@@ -14,7 +16,10 @@ const Theme = {
     toggleBorder: '#6B8096',
     backgroundColor: '#cce5ff',
     height: "100vh",
-    padding: "10px"
+    padding: "30px",
+    borderRadius: "50px",
+    borderTop: "1px solid black"
+
 }}
 
 export default Theme;

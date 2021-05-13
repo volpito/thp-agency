@@ -7,6 +7,7 @@ import Works from './Pages/Works';
 import Navbar from './Components/Navbar';
 import Theme from './Theme';
 import WorkSlug from './Pages/Works/StudyCase/index';
+import ghost from './Components/Img/ghost.gif'
 import './App.css'
 
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
   }, [])
 
   const currentTheme = theme === 'light' ? Theme.light : Theme.dark;
-  const button = theme === 'light' ? 'dark mode' : 'light mode';
+  const button = theme === 'light' ? 'Dark mode' : 'Light mode';
 
   localStorage.setItem('theme', theme);
 
@@ -27,7 +28,7 @@ const App = () => {
 //CSS for borders :
 document.body.style = 'background: rgb(216, 130, 2);';
   return (
-    <div className="background" >
+    <div className="back" >
     
     <Router>
     <button className="btn" onClick={ToggleTheme} type="button">{button}</button>
@@ -49,8 +50,11 @@ document.body.style = 'background: rgb(216, 130, 2);';
 
           </Route>
         </Switch>
+        <img src={ghost} alt="ghost"></img>
+
       </main>
     </Router>
+
     </div>
   );
 }
